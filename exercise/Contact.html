@@ -53,13 +53,19 @@
           <div class="form-group">
             <label for="nameInput" class="control-label col-md-2">Your Name</label>
             <div class="col-md-10">
-              <input type="text" name="nameInput" class="form-control" placeholder="e.g. Your Name" />
+              <div class="input-group">
+                <input type="text" name="nameInput" class="form-control" placeholder="e.g. Your Name" />
+                <span class="input-group-addon">!</span>
+              </div>
             </div>
           </div>
           <div class="form-group">
             <label for="emailInput" class="control-label col-md-2">Email</label>
             <div class="col-md-10">
-              <input type="email" name="emailInput" class="form-control" placeholder="e.g. Your Email" />
+              <div class="input-group">
+                <span class="input-group-addon">@</span>
+                <input type="email" name="emailInput" class="form-control" placeholder="e.g. Your Email" />
+              </div>
             </div>
           </div>
 
@@ -88,12 +94,6 @@
           <div class="form-group">
             <label class="control-label col-md-2">Reason</label>
             <div class="col-md-10">
-            <!--   <select class="form-control">
-                <option>Adoration</option>
-                <option>Ordering a White Russian</option>
-                <option>Complaint</option>
-                <option>I am lost</option>
-              </select> -->
               <div class="dropdown">
                 <button class="btn btn-success" id="pickButton">Pick One...</button>
                 <button class="btn btn-success" data-toggle="dropdown"><span class="caret"></span></button>
