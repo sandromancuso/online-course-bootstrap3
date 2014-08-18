@@ -49,7 +49,7 @@
 
       <p>This doesn't really work, but it's an example of a form. Easy, man. Relax, man.</p>
       <div class="row">
-        <form class="form-horizontal">
+        <form class="form-horizontal" id="contactForm">
           <div class="form-group">
             <label for="nameInput" class="control-label col-md-2">Your Name</label>
             <div class="col-md-10">
@@ -118,7 +118,11 @@
             </div>
           </div>
         </form>
+
+<!--         <a href="#sentDialog" class="btn btn-info" data-toggle="modal">Show Dialog...</a>
+ -->
       </div>
+
       <h3>Our fake address</h3>
       <div>
         <address>
@@ -141,6 +145,23 @@
       <p>Text placeholders courtesy of <a href="http://www.lebowskiipsum.com/">Lebowski Ipsum</a>.</p>
 
     </footer>
+  </div>
+
+  <div class="modal" id="sentDialog" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <a href="#" class="close" data-dismiss="modal">&times;</a>
+          <h4>Thanks for clicking</h4>
+        </div>
+        <div class="modal-body">
+          <p>This form doesn't really work...haha</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-success" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="js/jquery-2.0.3.min.js"></script>
